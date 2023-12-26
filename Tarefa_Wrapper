@@ -1,0 +1,9 @@
+public class Tarefa {
+    public static void main(String[] args) {
+        int n1 = 200;
+        System.out.println(n1);
+        Integer n = n1;
+        System.out.println(n);
+
+    }
+}
