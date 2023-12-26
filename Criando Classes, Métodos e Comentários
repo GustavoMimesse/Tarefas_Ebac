@@ -1,0 +1,30 @@
+public class Computador {
+        private int valor;
+        private String descricao;
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public static void main(String[] args) {
+        //Mouse e Teclado não inclusos.
+        Computador computador = new Computador();
+        computador.setValor(2500);
+        computador.setDescricao("16GB de RAM, Placa de Vídeo GTX1650, Processor Intel I5-9400F");
+        System.out.println(computador.getDescricao());
+        System.out.println(computador.getValor());
+    }
+}
+
