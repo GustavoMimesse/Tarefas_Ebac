@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class TarefaNotaAluno {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Digite seu nome: ");
+        String name = s.nextLine();
+        System.out.println("Digite sua nota 1: ");
+        int nota1 = s.nextInt();
+        System.out.println("Digite sua nota 2: ");
+        int nota2 = s.nextInt();
+        System.out.println("Digite sua nota 3: ");
+        int nota3 = s.nextInt();
+        System.out.println("Digite sua nota 4: ");
+        int nota4 = s.nextInt();
+        int media = nota1 + nota2 + nota3 + nota4 / 4;
+        System.out.println(name + " sua média é final é: " + media);
+        String notaf = getNotaf(media);
+        System.out.println(notaf);
+    }
+    public static String getNotaf(int nota) {
+        if (nota == 0) {
+            return ("você está reprovado");
+        } else if (nota >=1 && nota<=5) {
+            return ("você está de recuperação");
+        } else {
+            return ("você está aprovado. Parabéns!");
+        }
+
+    }
+}
